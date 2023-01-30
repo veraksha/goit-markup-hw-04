@@ -121,6 +121,14 @@ font-style: normal;
 
 /* Studio Main Page */
 /* section 1/2 */
+.social-icon{
+    background-color:var(--light-txt-cl);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 8px;
+}
 .title{
 font-weight: 700;
 font-size: 56px;
@@ -155,13 +163,19 @@ border-radius: 4px;
     text-align:center;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .section-two{
   padding-top: 120px;
   padding-bottom: 120px;
 }
 .flex-list-a{
-    flex-basis: auto;
+    
 }
 .list-section-one{
 gap: 24px;
@@ -212,6 +226,7 @@ color:var(--dark-txt-cl);
 margin-bottom: 72px;
 }
 /* section 4 */
+
 .section-four{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -239,9 +254,14 @@ letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.member-box{
+.member-list{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+}
+/* section 5 */
+.section-five{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 /* footer */
 .footer{
@@ -273,6 +293,9 @@ margin-top: 16px;
     padding-bottom: 32px;
     padding-left: 16px;
 }
+.project-item:hover{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .images{
     margin-top: 51px;
 }
@@ -303,16 +326,19 @@ height: 48px;
 }
 .btn-general{
     margin-right: 24px;
+    
 }
 .navigation-btn:hover{
 background-color: var(--focused-txt-cl);
 color:var(--white-txt-cl);
 cursor: pointer;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .navigation-btn:focus{
 background-color: var(--focused-txt-cl);
 color: var(--white-txt-cl);
 cursor: pointer;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .service-title{
     font-weight: 500;
