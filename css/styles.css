@@ -231,6 +231,25 @@ margin-bottom: 72px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.social-item{
+    
+}
+.social-bg{
+    background-color:var(--button-cl) ;
+    border-radius: 50%;
+    width: 40px;
+height: 40px;
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 12px;
+padding-right: 12px;
+
+}
+.social-list{
+    display: flex;
+    gap: 24px;
+    padding-left: 16px;
+}
 .banner-grey{
     background-color: var(--light-txt-cl);
 }
@@ -248,6 +267,7 @@ font-size: 16px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
+padding-bottom: 8px;
 }
 .member{
     background-color:var(--white-txt-cl);
@@ -262,6 +282,48 @@ letter-spacing: 0.02em;
 .section-five{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.brands-item{
+    /* padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px; */
+    width: 168px;
+height: 88px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+padding: 24px 60px;
+}
+.brands-item-4{
+    width: 168px;
+height: 88px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+padding: 23px 42px;
+}
+.brands-item-5{
+    width: 168px;
+height: 88px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+padding: 21px 52px;
+}
+.brands-item-6{
+    width: 168px;
+height: 88px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+padding: 21px 38px;
+}
+.brands-list{
+    display: flex;
+    gap: 24px;
+}
+.brands-item:focus{
+    color: var(--focused-txt-cl);
+}
+.brands-item:focus{
+    color: var(--focused-txt-cl);
 }
 /* footer */
 .footer{
@@ -368,4 +430,36 @@ letter-spacing: 0.02em;
 .list{
   flex-wrap: wrap;
   gap: 48px 24px;
+}
+.footer-title{
+    width: 96px;
+    height: 24px;
+    left: 540px;
+    top: 2988px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-txt-cl);
+    margin-left: 120px;
+
+}
+.social-bg-footer{
+    background-color:var(--main-txt-cl) ;
+    border-radius: 50%;
+    width: 40px;
+height: 40px;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 8px;
+padding-right: 8px;
+margin-top: 16px;
+}
+.social-list-footer{
+    display: flex;
+    gap: 16px;
+    margin-left: 120px;
+}
+.footer-list{
+    display: flex;
 }
