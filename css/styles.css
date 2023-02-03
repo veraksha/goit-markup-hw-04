@@ -123,11 +123,12 @@ font-style: normal;
 /* section 1/2 */
 .social-icon{
     background-color:var(--light-txt-cl);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 100px;
-    padding-right: 100px;
+    height: 112px;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 .title{
 font-weight: 700;
@@ -231,24 +232,21 @@ margin-bottom: 72px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.social-item{
-    
-}
 .social-bg{
     background-color:var(--button-cl) ;
     border-radius: 50%;
     width: 40px;
 height: 40px;
-padding-top: 12px;
-padding-bottom: 12px;
-padding-left: 12px;
-padding-right: 12px;
+justify-content: center;
+align-items: center;
+display: flex;
+
 
 }
 .social-list{
     display: flex;
     gap: 24px;
-    padding-left: 16px;
+    margin-left: 16px;
 }
 .banner-grey{
     background-color: var(--light-txt-cl);
@@ -267,7 +265,7 @@ font-size: 16px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
-padding-bottom: 8px;
+margin-bottom: 8px;
 }
 .member{
     background-color:var(--white-txt-cl);
@@ -283,47 +281,28 @@ padding-bottom: 8px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.brands-item{
-    /* padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px; */
-    width: 168px;
-height: 88px;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-padding: 24px 60px;
-}
-.brands-item-4{
-    width: 168px;
-height: 88px;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-padding: 23px 42px;
-}
-.brands-item-5{
-    width: 168px;
-height: 88px;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-padding: 21px 52px;
-}
-.brands-item-6{
-    width: 168px;
-height: 88px;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-padding: 21px 38px;
-}
+
 .brands-list{
     display: flex;
     gap: 24px;
 }
-.brands-item:focus{
+.link-h{
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-h:hover{
     color: var(--focused-txt-cl);
 }
-.brands-item:focus{
+.link-h:focus{
     color: var(--focused-txt-cl);
+}
+.svg-five{
+fill: currentColor;
 }
 /* footer */
 .footer{
@@ -344,6 +323,50 @@ width: 264px;
 height: 72px;
 margin-top: 16px;
 }
+.footer-title{
+    width: 96px;
+    height: 24px;
+    left: 540px;
+    top: 2988px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-txt-cl);
+    
+
+}
+.social-bg-footer{
+    background-color:var(--main-txt-cl) ;
+    border-radius: 50%;
+    width: 40px;
+height: 40px;
+margin-top: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.social-bg-footer:hover{
+    background-color: var(--success);
+}
+.social-bg-footer:focus{
+    background-color: var(--success);
+}
+.social-list-footer{
+    display: flex;
+    gap: 16px;
+   
+}
+.footer-list{
+    display: flex;
+}
+.footer-div{
+    display: inline-block;
+}
+.container-footer{
+    margin-left: 120px;
+}
+
 
 /* Portfolio Main Page */
 .service{
@@ -355,12 +378,14 @@ margin-top: 16px;
     padding-bottom: 32px;
     padding-left: 16px;
 }
-.project-item:hover{
+.project-card:hover{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 }
-.images{
-    margin-top: 51px;
+.project-card{
+    display: block;
 }
+
 .portfolio-section{
     padding-top: 96px;
     padding-bottom: 120px;
@@ -427,39 +452,9 @@ letter-spacing: 0.02em;
     margin-top: 48px;
     margin-bottom: 51px;
 }
-.list{
-  flex-wrap: wrap;
-  gap: 48px 24px;
-}
-.footer-title{
-    width: 96px;
-    height: 24px;
-    left: 540px;
-    top: 2988px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--white-txt-cl);
-    margin-left: 120px;
-
-}
-.social-bg-footer{
-    background-color:var(--main-txt-cl) ;
-    border-radius: 50%;
-    width: 40px;
-height: 40px;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 8px;
-padding-right: 8px;
-margin-top: 16px;
-}
-.social-list-footer{
+.portfolio-list{
+    flex-wrap: wrap;
+    gap: 48px 24px;
     display: flex;
-    gap: 16px;
-    margin-left: 120px;
-}
-.footer-list{
-    display: flex;
+    
 }
