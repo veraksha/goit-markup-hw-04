@@ -9,6 +9,7 @@
     --light-txt-cl:#F4F4FD;
     --white-txt-cl: #FFFFFF;
     --button-cl:#404BBF;
+    
 
     --success:#31D0AA;
     --success-75:rgba(49, 208, 170, 0.75);
@@ -233,7 +234,7 @@ margin-bottom: 72px;
     padding-bottom: 120px;
 }
 .social-bg{
-    background-color:var(--button-cl) ;
+    background-color:var(--focused-txt-cl) ;
     border-radius: 50%;
     width: 40px;
 height: 40px;
@@ -242,6 +243,12 @@ align-items: center;
 display: flex;
 
 
+}
+.social-bg:hover{
+    background-color: var(--button-cl);
+}
+.social-bg:focus{
+background-color: var(--button-cl);
 }
 .social-list{
     display: flex;
@@ -287,23 +294,32 @@ margin-bottom: 8px;
     gap: 24px;
 }
 .link-h{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 168px;
     height: 88px;
-    border: 1px solid #8E8F99;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid #8E8F99;
+    fill: #8E8F99; 
+
 }
-.link-h:hover{
-    color: var(--focused-txt-cl);
-}
+.link-h:hover,
 .link-h:focus{
-    color: var(--focused-txt-cl);
+    border:1px solid var(--button-cl);
+    fill: var(--button-cl);
 }
 .svg-five{
-fill: currentColor;
+fill: var(--grey-txt-cl);
 }
+.link-h:hover .svg-five{
+    fill: var(--button-cl);
+}
+.link-h:focus .svg-five{
+    fill: var(--button-cl);
+}
+
 /* footer */
 .footer{
     background-color:var(--dark-txt-cl);
@@ -360,9 +376,6 @@ justify-content: center;
 .footer-list{
     display: flex;
 }
-.footer-div{
-    display: inline-block;
-}
 .container-footer{
     margin-left: 120px;
 }
@@ -384,6 +397,8 @@ justify-content: center;
 }
 .project-card{
     display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .portfolio-section{
